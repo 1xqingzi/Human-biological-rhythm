@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<math.h>
+#include<stdlib.h>
 
 
 int main()
@@ -16,12 +17,12 @@ int main()
 
 	int cyear,cm,cd;//测定年，月，日
 	int byear,bm,bd;//出生年，月，日
-	printf("输入测定年及具体日期（格式：例如，1993,12,3）：");
+	printf("输入测定年及具体日期（格式：例如，1993,12,3(逗号为英语模式)）：");
 	scanf("%d,%d,%d",&cyear,&cm,&cd);
-	printf("\n输入生日年及具体日期（格式：例如，1993,12,3）：");
+	printf("\n输入生日年及具体日期（格式：例如，1993,12,3(逗号为英语模式)）：");
 	scanf("%d,%d,%d",&byear,&bm,&bd);
 
-	//判断输入的年月日是否正确
+	
 	
 
 
@@ -92,7 +93,7 @@ int main()
 	  ps=totalday%23;
 	  mood=totalday%28;
 	  inte=totalday%33;
-	  printf("\n体力余数=%d\n,情绪余数=%d\n,智力余数=%d\n\n\n",ps,mood,inte);
+	  printf("\n体力余数=%d\n情绪余数=%d\n智力余数=%d\n\n\n",ps,mood,inte);
 
 
 	  //表
@@ -101,4 +102,6 @@ int main()
 	  printf("体力节律\t余数等于0\t余数小于12\t余数等于12\t余数大于12\n");
 	  printf("情绪节律\t余数等于0\t余数小与14\t余数等于14\t余数大于14\n");
 	  printf("智力节律\t余数等于0\t余数小与17\t余数等于17\t余数大于17\n");
+	  system("pause");
+	  return 0;
 }
